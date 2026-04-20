@@ -1,6 +1,8 @@
 # THE ANCHOR (2026)
 
-![The Anchor Roadmap Preview](public/screenshots/preview.png)
+<p align="center">
+  <img src="public/screenshots/roadmap.jpg" alt="The Anchor Roadmap" width="100%" style="border-radius: 20px;">
+</p>
 A high-fidelity strategy roadmap designed for clarity and timeline precision. Built with a minimalist oatmeal aesthetic, this custom Gantt implementation focuses on high-signal career and project tracking for the 2026 landscape.
 
 ## Core Tech
