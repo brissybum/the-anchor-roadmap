@@ -5,28 +5,47 @@
   --foreground: #2D2B28;
 }
 
-/* Base Font Smoothing */
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background) !important;
+  /* Clean, straight-lettering font stack */
+  font-family: 'JetBrains Mono', 'Roboto Mono', 'Menlo', monospace;
+  color: var(--foreground);
+  user-select: none;
 }
 
-/* Custom Date Picker Styling for better legibility */
-input[type="date"] {
-  font-family: inherit;
-  color-scheme: light;
+/* Ensure all inputs and milestones use the same monospaced aesthetic */
+input, span, div {
+  font-style: normal !important;
+  font-family: 'JetBrains Mono', 'Roboto Mono', 'Menlo', monospace;
 }
 
-.dark input[type="date"] {
-  color-scheme: dark;
+/* --- BORDERS & DIVIDERS --- */
+.grid-cell-border {
+  border-bottom: 1px solid #E8E4DE;
+  border-right: 1px solid #E8E4DE;
 }
 
-/* Scrollbar to match the clean vibe */
-::-webkit-scrollbar {
-  width: 6px;
+.dark .grid-cell-border {
+  border-bottom-color: rgba(148, 163, 184, 0.15);
+  border-right-color: rgba(148, 163, 184, 0.15);
 }
-::-webkit-scrollbar-thumb {
-  background: #E8E4DE;
-  border-radius: 10px;
+
+.main-divider {
+  border-right: 2px solid #D8D4CE !important;
+}
+
+.dark .main-divider {
+  border-right-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+.dark .month-grid-line {
+  border-right: 1px solid rgba(148, 163, 184, 0.1) !important;
+}
+
+.interactive-bubble {
+  z-index: 50;
+  position: absolute;
+  touch-action: none;
 }
